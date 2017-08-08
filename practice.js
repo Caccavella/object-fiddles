@@ -205,12 +205,13 @@ var user2 = {
 };
 //Let's say I, the user, decided to change my name and email address to the following
 // name -> 'Tyler S. McGinnis', email -> 'tyler.mcginnis@devmounta.in'. Make that change.
-
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in';
   //Code Here
 
 //Now call the sayEmail method that's on the user object which will alert the users email
 
-  //Code Here
+user2.sayEmail(); //Code Here
 
 
 
@@ -221,6 +222,7 @@ var user2 = {
 
 
 //Create an empty object called methodCollection.
+var methodCollection = {}
 
   //Code Here
 
@@ -228,11 +230,16 @@ var user2 = {
 object. One called 'alertHello' which alerts 'hello' and another method called logHello
  which logs 'hello' to the console. */
 
-  //Code Here
-
+methodCollection.alertHello = function (){
+  alert('hello');
+}  //Code Here
+methodCollection.logHello = function () {
+  console.log('hello');
+}
 //Now call your alertHello and logHello methods.
 
-  //Code Here
+methodCollection.alertHello();
+methodCollection.logHello();  //Code Here
 
 
 
