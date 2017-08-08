@@ -1,31 +1,14 @@
 //Once you complete a problem, open up Chrome and check the answer in the console.
 
 
-//Create an object called me. Give it a key of name with the value being your name, and another key of age with the value being your age. Then alert your name using dot notation.
+//Create an object called me. Give it a key of name with the value being your name, and another key of age with the value being your age. 
+//Then alert your name using dot notation.
 
-  //Code here
-
-
-
-
-//NEXT PROBLEM
-
-
-
-
-//Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday. Have the values to those keys be your favorite thing in that category.
-
-  //Code here
-
-
-//After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
-
-  //Code here
-
-
-//Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
-
-  //Code here
+var me = {
+  name: 'Anthony',
+  age: 25
+} 
+alert(me.name); //Code here
 
 
 
@@ -34,25 +17,62 @@
 
 
 
-/*Create an empty Object called backPack. Now, create a variable called 'item'
-and set it equal to the string 'firstPocket'. Using bracket notation,
-add a 'firstPocket' key (or property) to backPack, using 'item'.
-Set the value of that key to 'chapstick'.
 
-Using dot notation, add another key (or property) to your backPack object
-that is named color, with the value being the color of your backpack. */
+//Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday.
+// Have the values to those keys be your favorite thing in that category.
 
-  //Code here
+var favoriteThings = {
+  band: 'Tool',
+  food: 'steak',
+  person: 'my wife',
+  book: 'The Night Angel Trilogy',
+  movie: 'Boondock Saints',
+  holiday: ("St Patrick's Day")
+}  //Code here
 
-//After you do the above, alert your entire backPack object.
 
-  //Code here
+//After you've made your object, add another key named 'car' with the value being your favorite car and then another key 
+//named 'brand' with the value being your favorite brand.
 
-/*You probably noticed that it just alerted [object Object].
-Alerting to see the data in your Object doesn't work so well.
-Instead, console.log your whole backPack object and then check out the console. */
+favoriteThings.car = 'Hellcat';
+favoriteThings.brand = 'None';  //Code here
 
-  //Code here
+
+// //Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change
+// // the value of the book key in your favoriteThings object to be 'Harry Potter'.
+
+favoriteThings['food']= 'Chicken Nuggets';  //Code here
+favoriteThings['book']= 'Harry Potter';
+console.log(favoriteThings);
+
+
+// //NEXT PROBLEM
+
+
+
+// /*Create an empty Object called backPack. Now, create a variable called 'item'
+// and set it equal to the string 'firstPocket'. Using bracket notation,
+// add a 'firstPocket' key (or property) to backPack, using 'item'.
+// Set the value of that key to 'chapstick'.
+
+// Using dot notation, add another key (or property) to your backPack object
+// that is named color, with the value being the color of your backpack. */
+
+var item = 'firstPocket';
+var backPack = {
+  item: 'chapstick',
+  }  //Code here
+backPack.color = 'black';
+
+// //After you do the above, alert your entire backPack object.
+
+alert(backPack);  //Code here
+
+// /*You probably noticed that it just alerted [object Object].
+// Alerting to see the data in your Object doesn't work so well.
+// Instead, console.log your whole backPack object and then check out the console. */
+
+console.log(backPack);  //Code here
 
 
 
@@ -64,11 +84,23 @@ Instead, console.log your whole backPack object and then check out the console. 
 
 //Create an 'alsoMe' object with the following properties name, age, height, gender, married, eyeColor, hairColor. Fill those properties in with the appropriate values.
 
-  //Code Here
+var alsoMe = {
+  name: 'Anthony',
+  age: 25 ,
+  height: 'six feet 5 inches' ,
+  gender: 'male',
+  married: 'yes',
+  eyeColor: 'hazel' ,
+  hairColor: 'brown'
+}  //Code Here
 
 //Now, loop through your object and alert every value. *Tyler --> 24 --> 6'0 --> Male, etc etc
 
-  //Code Here
+var arr = []
+for (var i; i < arr.length; i++) {
+  arr[i] = alsoMe[i];
+console.log(alsoMe[i]);
+}
 
 
 
@@ -80,7 +112,13 @@ Instead, console.log your whole backPack object and then check out the console. 
 
 //Create an Object called 'album' with 5 keys named different song titles that you make up, with the values being the length of each song.
 
-  //Code Here
+ var album = {
+   'Grayest of Blue Skies': '3:21',
+   'Saints Row': '4:21',
+   'Neverwinter': '2:31',
+   'Everlong': '4:07',
+   'Falling Fast': '5:33'
+ } //Code Here
 
 //Now, loop through your album object alerting every song title individually.
 
