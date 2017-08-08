@@ -249,28 +249,43 @@ methodCollection.logHello();  //Code Here
 
 // Create a function called makePerson which takes in name, birthday, ssn as its
 // parameters and returns a new object with all of the information that you passed in.
-
-  //Code Here
-
-
-
-//NEXT PROBLEM
-
-
-
-// Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode to make a Credit Card object and returns that object so that whenever you invoke makeCard, you get a brand new credit card.
-
-  //Code Here
+function makePerson(name, birthday, ssn) {
+return {
+  name: name,
+  birthday: birthday,
+  ssn: ssn,
+} 
+   //Code Here
 
 
 
 //NEXT PROBLEM
 
+
+
+// Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode to make a 
+//Credit Card object and returns that object so that whenever you invoke makeCard, you get a brand new credit card.
+
+ function makeCard (cardNumber, expirationDate, securityCode) {
+   return {
+     cardNumber: cardNumber,
+     expirationDate: expirationDate,
+     securityCode: securityCode,
+   }
+ } //Code Here
+
+
+
+//NEXT PROBLEM
 
 
 /* As of this point you should have a makePerson and a makeCard function which returns you either a person or a credit card object.
    Now, create a bindCard function that takes in a person object as its first parameter and a creditcard object as its second parameter.
-   Have bindCard merge the two parameters together into a new object which contains all the properties from the person as well as the creditcard. While Object.assign would give you the answer, specRunner requires an answer without using it.
+   Have bindCard merge the two parameters together into a new object which contains all the properties from the person as well as the creditcard. \
+   //While Object.assign would give you the answer, specRunner requires an answer without using it.
 */
-
-  //Code Here
+function bindCard(person, creditcard) {
+  return (makePerson() + makeCard());
+}
+}
+bindCard(Anthony, 460232164846);
