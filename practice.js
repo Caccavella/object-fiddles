@@ -96,10 +96,8 @@ var alsoMe = {
 
 //Now, loop through your object and alert every value. *Tyler --> 24 --> 6'0 --> Male, etc etc
 
-var arr = []
-for (var i; i < arr.length; i++) {
-  arr[i] = alsoMe[i];
-console.log(alsoMe[i]);
+for  (var key in alsoMe) {
+console.log(alsoMe[key]);
 }
 
 
@@ -122,7 +120,9 @@ console.log(alsoMe[i]);
 
 //Now, loop through your album object alerting every song title individually.
 
-  //Code Here
+ for  (var song in album) {
+console.log(song);
+}  //Code Here
 
 
 
