@@ -97,7 +97,7 @@ var alsoMe = {
 //Now, loop through your object and alert every value. *Tyler --> 24 --> 6'0 --> Male, etc etc
 
 for  (var key in alsoMe) {
-console.log(alsoMe[key]);
+alert(alsoMe[key]);
 }
 
 
@@ -134,11 +134,21 @@ console.log(song);
 
 //Create an object called states that has 5 US states as properties with the values being their population (doesn't have to be accurate).
 
-  //Code Here
+var states = {
+  utah: 50000,
+  nevada: 60000,
+  jersey:77852,
+  kansas:406481,
+  idaho:23,
+}  //Code Here
 
 //Now, loop through your states object and if the states population is greater than 30K, alert that state.
 
-  //Code Here
+ for (var state in states) {
+   if (states[state] > 30000) {
+     alert(state);
+   }
+ } //Code Here
 
 
 
