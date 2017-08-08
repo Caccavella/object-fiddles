@@ -139,7 +139,7 @@ var states = {
   nevada: 60000,
   jersey:77852,
   kansas:406481,
-  idaho:23,
+  idaho: 23,
 }  //Code Here
 
 //Now, loop through your states object and if the states population is greater than 30K, alert that state.
@@ -168,12 +168,21 @@ var user1 = {
 }
 /*Above you're given a user object. Loop through the user object checking to make sure
 that each value is truthy. If it's not truthy, remove it from the object. */
+for (var data in user1){
+  if (!user1[data]) {
+    delete (user1[data])
+  }
+}
 
   //Code Here
 
-//Once you get your truthy Object, Change the remaining values in the object to be specific to you (name: 'your name', username: 'your username'), rather than my information.
+//Once you get your truthy Object, Change the remaining values in the object to be specific to you 
+//(name: 'your name', username: 'your username'), rather than my information.
+user1.name = 'Anthony';
+user1.username = 'anthony.caccavella@gmail.com';
+user1.pwHash = 'nothappening'
 
-  //Code Here
+console.log(user1);  //Code Here
 
 
 
